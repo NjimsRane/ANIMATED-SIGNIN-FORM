@@ -6,7 +6,7 @@ btnPass.addEventListener('click',function(){
     if(passInput.value === ""){
         return passImg;
     }
-    if(passInput.type ==='password'){
+    else if(passInput.type ==='password'){
         passInput.type = 'text';
         passImg.src = '/Images/hide.png'
     }else{
