@@ -12,26 +12,33 @@
     </head>
     <body>
         <div class="container">
-            <div class="box">
-                <form action="#" class="form">
-                    <h2>Sign in</h2>
-                    <div class="inputBox">
-                        <input type="text" required>
+            <form action="#" class="form">
+                <h1>Sign in</h1>
+                <div class="input-box">
+                    <label aria-label="user name">
+                        <input type="text" name="user name" id="user-name" required>
                         <span>Username</span>
                         <i></i>
-                    </div>
-                    <div class="inputBox">
-                        <input type="password" required>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label aria-label="password">
+                        <input type="password" name="password" id="user-password" required>
+                        <button class="show-hide-password" type='button'>
+                            <img src="/Images/show.png" alt="show and hide password image">
+                        </button>
                         <span>Password</span>
                         <i></i>
-                    </div>
-                    <div class="links">
-                        <a href="#">forgot Password?</a>
-                        <a href="#">Login</a>
-                    </div>
-                    <input type="submit" value="Sign" class="submit">
-                </form>
-            </div>
+                    </label>
+                </div>
+                <div class="links">
+                    <a href="#">Forgot password ?</a>
+                    <a href="#">Login</a>
+                </div>
+                <input type="submit" value="SignIn">
+            </form>
         </div>
+        <!-- script -->
+        <script src="/JS/script.js"></script>
     </body>
 </html>
